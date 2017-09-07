@@ -2,6 +2,10 @@
 
 namespace AppBundle\Controller;
 
+<<<<<<< HEAD
+=======
+use AppBundle\Entity\Todo;
+>>>>>>> game
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
@@ -13,7 +17,17 @@ class TodoController extends Controller
      */
     public function indexAction(Request $request)
     {
+<<<<<<< HEAD
         return $this->render('todo/index.html.twig');
+=======
+        $todos = $this->getDoctrine()
+                      ->getRepository('AppBundle:Todo')
+                      ->findAll();
+
+        return $this->render('todo/index.html.twig', array(
+            'todos' => $todos
+        ));
+>>>>>>> game
     }
 //******************************************************************************************
     /**
