@@ -1,1 +1,8 @@
-TODO Create
+{% extends '/base.html.twig' %}
+
+{% block body %}
+    <h2 class="page-header">Add Todo</h2>
+    {{ form_start(form) }}
+    {{ form_widget(form) }}
+    {{ form_end(form) }}
+{% endblock %}
