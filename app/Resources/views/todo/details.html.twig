@@ -7,7 +7,7 @@
     <ul class="list-group">
         <li class="list-group-item">Catefory: {{ todo.category }}</li>
         <li class="list-group-item">Priority: {{ todo.priority }}</li>
-        <li class="list-group-item">Due: <strong>{{ todo.dueDate | date('F j, Y, g:i a ') }}</strong> </li>
+        <li class="list-group-item">Due: <strong>{{ todo.dueDate | date('F jS, Y, g:i a ') }}</strong> </li>
     </ul>
     <p>
         {{ todo.description }}
